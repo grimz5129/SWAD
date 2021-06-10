@@ -1,0 +1,318 @@
+Version: 2.9.6
+File format: 4
+TRACE START [2021-01-06 10:46:50]
+3	131	0	0.000338	363376	spl_autoload_call	0		/p3t/phpappfolder/includes/coursework/bootstrap.php	12	1	'Slim\\Container'
+4	132	0	0.000352	363416	Composer\Autoload\ClassLoader->loadClass	1		/p3t/phpappfolder/includes/coursework/bootstrap.php	12	1	$class = 'Slim\\Container'
+5	133	0	0.000362	363416	Composer\Autoload\ClassLoader->findFile	1		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	321	1	$class = 'Slim\\Container'
+6	134	0	0.000374	363416	Composer\Autoload\ClassLoader->findFileWithExtension	1		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	351	2	$class = 'Slim\\Container'	$ext = '.php'
+7	135	0	0.000389	363416	strtr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	373	3	'Slim\\Container'	'\\'	'/'
+7	135	1	0.000397	363456
+7	135	R			'Slim/Container'
+7	136	0	0.000405	363464	strrpos	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	378	2	'Slim\\Container'	'\\'
+7	136	1	0.000411	363464
+7	136	R			4
+7	137	0	0.000417	363464	substr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	379	3	'Slim\\Container'	0	4
+7	137	1	0.000423	363496
+7	137	R			'Slim'
+7	138	0	0.000430	363528	substr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	382	2	'Slim/Container.php'	5
+7	138	1	0.000435	363568
+7	138	R			'Container.php'
+7	139	0	0.000442	363680	file_exists	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	384	1	'/p3t/phpappfolder/includes/vendor/composer/../slim/slim/Slim/Container.php'
+7	139	1	0.000458	363680
+7	139	R			TRUE
+6	134	1	0.000466	363528
+6	134	R			'/p3t/phpappfolder/includes/vendor/composer/../slim/slim/Slim/Container.php'
+5	133	1	0.000475	363528
+5	133	R			'/p3t/phpappfolder/includes/vendor/composer/../slim/slim/Slim/Container.php'
+5	140	0	0.000485	363528	Composer\Autoload\includeFile	1		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	322	1	$file = '/p3t/phpappfolder/includes/vendor/composer/../slim/slim/Slim/Container.php'
+6	141	0	0.000494	364432	include	1	/p3t/phpappfolder/includes/vendor/slim/slim/Slim/Container.php	/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	444	0
+7	142	0	0.000500	364432	spl_autoload_call	0		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/Container.php	35	1	'Pimple\\Container'
+8	143	0	0.000507	364480	Composer\Autoload\ClassLoader->loadClass	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/Container.php	35	1	$class = 'Pimple\\Container'
+9	144	0	0.000574	364480	Composer\Autoload\ClassLoader->findFile	1		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	321	1	$class = 'Pimple\\Container'
+10	145	0	0.000599	364480	Composer\Autoload\ClassLoader->findFileWithExtension	1		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	351	2	$class = 'Pimple\\Container'	$ext = '.php'
+11	146	0	0.000624	364480	strtr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	373	3	'Pimple\\Container'	'\\'	'/'
+11	146	1	0.000665	364528
+11	146	R			'Pimple/Container'
+11	147	0	0.000708	364528	strrpos	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	378	2	'Pimple\\Container'	'\\'
+11	147	1	0.000716	364528
+11	147	R			6
+11	148	0	0.000722	364528	substr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	379	3	'Pimple\\Container'	0	6
+11	148	1	0.000727	364560
+11	148	R			'Pimple'
+11	149	0	0.000734	364592	strrpos	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	378	2	'Pimple'	'\\'
+11	149	1	0.000739	364592
+11	149	R			FALSE
+11	150	0	0.000746	364592	strrpos	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	400	2	'Pimple\\Container'	'\\'
+11	150	1	0.000751	364592
+11	150	R			6
+11	151	0	0.000756	364592	substr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	402	3	'Pimple/Container.php'	0	7
+11	151	1	0.000761	364624
+11	151	R			'Pimple/'
+11	152	0	0.000767	364624	substr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	403	2	'Pimple/Container.php'	7
+11	152	1	0.000772	364664
+11	152	R			'Container.php'
+11	153	0	0.000778	364664	strtr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	403	3	'Container.php'	'_'	'/'
+11	153	1	0.000792	364664
+11	153	R			'Container.php'
+11	154	0	0.000801	364640	strpos	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	411	2	'Pimple\\Container'	'Pimple'
+11	154	1	0.000807	364640
+11	154	R			0
+11	155	0	0.000814	364752	file_exists	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	413	1	'/p3t/phpappfolder/includes/vendor/composer/../pimple/pimple/src/Pimple/Container.php'
+11	155	1	0.000829	364752
+11	155	R			TRUE
+10	145	1	0.000836	364592
+10	145	R			'/p3t/phpappfolder/includes/vendor/composer/../pimple/pimple/src/Pimple/Container.php'
+9	144	1	0.000845	364592
+9	144	R			'/p3t/phpappfolder/includes/vendor/composer/../pimple/pimple/src/Pimple/Container.php'
+9	156	0	0.000855	364592	Composer\Autoload\includeFile	1		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	322	1	$file = '/p3t/phpappfolder/includes/vendor/composer/../pimple/pimple/src/Pimple/Container.php'
+10	157	0	0.000867	365896	include	1	/p3t/phpappfolder/includes/vendor/pimple/pimple/src/Pimple/Container.php	/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	444	0
+10	157	1	0.000875	365888
+9	156	1	0.000879	365656
+8	143	1	0.000883	365544
+8	143	R			TRUE
+7	142	1	0.000889	365496
+7	142	R			NULL
+7	158	0	0.000896	365512	spl_autoload_call	0		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/Container.php	35	1	'Psr\\Container\\ContainerInterface'
+8	159	0	0.000903	365576	Composer\Autoload\ClassLoader->loadClass	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/Container.php	35	1	$class = 'Psr\\Container\\ContainerInterface'
+9	160	0	0.000911	365576	Composer\Autoload\ClassLoader->findFile	1		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	321	1	$class = 'Psr\\Container\\ContainerInterface'
+10	161	0	0.000920	365576	Composer\Autoload\ClassLoader->findFileWithExtension	1		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	351	2	$class = 'Psr\\Container\\ContainerInterface'	$ext = '.php'
+11	162	0	0.000933	365576	strtr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	373	3	'Psr\\Container\\ContainerInterface'	'\\'	'/'
+11	162	1	0.000939	365640
+11	162	R			'Psr/Container/ContainerInterface'
+11	163	0	0.000946	365640	strrpos	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	378	2	'Psr\\Container\\ContainerInterface'	'\\'
+11	163	1	0.000951	365640
+11	163	R			13
+11	164	0	0.000957	365640	substr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	379	3	'Psr\\Container\\ContainerInterface'	0	13
+11	164	1	0.000962	365680
+11	164	R			'Psr\\Container'
+11	165	0	0.000969	365720	substr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	382	2	'Psr/Container/ContainerInterface.php'	14
+11	165	1	0.000974	365768
+11	165	R			'ContainerInterface.php'
+11	166	0	0.000981	365880	file_exists	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	384	1	'/p3t/phpappfolder/includes/vendor/composer/../psr/container/src/ContainerInterface.php'
+11	166	1	0.000991	365880
+11	166	R			TRUE
+10	161	1	0.000997	365688
+10	161	R			'/p3t/phpappfolder/includes/vendor/composer/../psr/container/src/ContainerInterface.php'
+9	160	1	0.001006	365688
+9	160	R			'/p3t/phpappfolder/includes/vendor/composer/../psr/container/src/ContainerInterface.php'
+9	167	0	0.001015	365688	Composer\Autoload\includeFile	1		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	322	1	$file = '/p3t/phpappfolder/includes/vendor/composer/../psr/container/src/ContainerInterface.php'
+10	168	0	0.001022	365920	include	1	/p3t/phpappfolder/includes/vendor/psr/container/src/ContainerInterface.php	/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	444	0
+10	168	1	0.001028	365920
+9	167	1	0.001031	365688
+8	159	1	0.001035	365576
+8	159	R			TRUE
+7	158	1	0.001041	365512
+7	158	R			NULL
+6	141	1	0.001049	366552
+5	140	1	0.001053	366320
+4	132	1	0.001057	366208
+4	132	R			TRUE
+3	131	1	0.001062	366168
+3	131	R			NULL
+3	169	0	0.001069	366360	Slim\Container->__construct	1		/p3t/phpappfolder/includes/coursework/bootstrap.php	12	1	$values = array ('settings' => array ('displayErrorDetails' => TRUE, 'addContentLengthHeader' => FALSE, 'mode' => 'development', 'debug' => TRUE, 'class_path' => '/p3t/phpappfolder/includes/coursework/app/src/', 'view' => array ('template_path' => '/p3t/phpappfolder/includes/coursework/app/templates/', 'twig' => array (...)), 'pdo_settings' => array ('rdbms' => 'mysql', 'host' => 'localhost', 'db_name' => 'coursework_db', 'port' => '3306', 'user_name' => 'coursework_user', 'user_password' => 'coursework_user_pass', 'charset' => 'utf8', 'collation' => 'utf8_unicode_ci', 'options' => array (...))))
+4	170	0	0.001091	366360	Slim\Container->__construct	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/Container.php	57	1	$values = array ('settings' => array ('displayErrorDetails' => TRUE, 'addContentLengthHeader' => FALSE, 'mode' => 'development', 'debug' => TRUE, 'class_path' => '/p3t/phpappfolder/includes/coursework/app/src/', 'view' => array ('template_path' => '/p3t/phpappfolder/includes/coursework/app/templates/', 'twig' => array (...)), 'pdo_settings' => array ('rdbms' => 'mysql', 'host' => 'localhost', 'db_name' => 'coursework_db', 'port' => '3306', 'user_name' => 'coursework_user', 'user_password' => 'coursework_user_pass', 'charset' => 'utf8', 'collation' => 'utf8_unicode_ci', 'options' => array (...))))
+5	171	0	0.001108	366680	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/vendor/pimple/pimple/src/Pimple/Container.php	61	2	$id = 'settings'	$value = array ('displayErrorDetails' => TRUE, 'addContentLengthHeader' => FALSE, 'mode' => 'development', 'debug' => TRUE, 'class_path' => '/p3t/phpappfolder/includes/coursework/app/src/', 'view' => array ('template_path' => '/p3t/phpappfolder/includes/coursework/app/templates/', 'twig' => array ('cache' => FALSE, 'auto_reload' => TRUE)), 'pdo_settings' => array ('rdbms' => 'mysql', 'host' => 'localhost', 'db_name' => 'coursework_db', 'port' => '3306', 'user_name' => 'coursework_user', 'user_password' => 'coursework_user_pass', 'charset' => 'utf8', 'collation' => 'utf8_unicode_ci', 'options' => array (3 => 2, 19 => 2, 20 => TRUE)))
+5	171	1	0.001127	367432
+4	170	1	0.001131	367432
+4	172	0	0.001135	367432	Slim\Container->registerDefaultServices	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/Container.php	60	1	$userSettings = array ('displayErrorDetails' => TRUE, 'addContentLengthHeader' => FALSE, 'mode' => 'development', 'debug' => TRUE, 'class_path' => '/p3t/phpappfolder/includes/coursework/app/src/', 'view' => array ('template_path' => '/p3t/phpappfolder/includes/coursework/app/templates/', 'twig' => array ('cache' => FALSE, 'auto_reload' => TRUE)), 'pdo_settings' => array ('rdbms' => 'mysql', 'host' => 'localhost', 'db_name' => 'coursework_db', 'port' => '3306', 'user_name' => 'coursework_user', 'user_password' => 'coursework_user_pass', 'charset' => 'utf8', 'collation' => 'utf8_unicode_ci', 'options' => array (3 => 2, 19 => 2, 20 => TRUE)))
+5	173	0	0.001152	368152	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/Container.php	82	2	$id = 'settings'	$value = class Closure { public $static = array ('userSettings' => array ('displayErrorDetails' => TRUE, 'addContentLengthHeader' => FALSE, 'mode' => 'development', 'debug' => TRUE, 'class_path' => '/p3t/phpappfolder/includes/coursework/app/src/', 'view' => array (...), 'pdo_settings' => array (...)), 'defaultSettings' => array ('httpVersion' => '1.1', 'responseChunkSize' => 4096, 'outputBuffering' => 'append', 'determineRouteBeforeAppMiddleware' => FALSE, 'displayErrorDetails' => FALSE, 'addContentLengthHeader' => TRUE, 'routerCacheFile' => FALSE)); public $this = class Slim\Container { private $defaultSettings = array ('httpVersion' => '1.1', 'responseChunkSize' => 4096, 'outputBuffering' => 'append', 'determineRouteBeforeAppMiddleware' => FALSE, 'displayErrorDetails' => FALSE, 'addContentLengthHeader' => TRUE, 'routerCacheFile' => FALSE); private ${Pimple\Container}values = array ('settings' => array (...)); private ${Pimple\Container}factories = class SplObjectStorage { private $storage = array (...) }; private ${Pimple\Container}protected = class SplObjectStorage { private $storage = array (...) }; private ${Pimple\Container}frozen = array (); private ${Pimple\Container}raw = array (); private ${Pimple\Container}keys = array ('settings' => TRUE) } }
+5	173	1	0.001186	368640
+5	173	R			NULL
+5	176	0	0.001193	368640	spl_autoload_call	0		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/Container.php	86	1	'Slim\\DefaultServicesProvider'
+6	177	0	0.001200	368696	Composer\Autoload\ClassLoader->loadClass	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/Container.php	86	1	$class = 'Slim\\DefaultServicesProvider'
+7	178	0	0.001207	368696	Composer\Autoload\ClassLoader->findFile	1		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	321	1	$class = 'Slim\\DefaultServicesProvider'
+8	179	0	0.001216	368696	Composer\Autoload\ClassLoader->findFileWithExtension	1		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	351	2	$class = 'Slim\\DefaultServicesProvider'	$ext = '.php'
+9	180	0	0.001249	368696	strtr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	373	3	'Slim\\DefaultServicesProvider'	'\\'	'/'
+9	180	1	0.001481	368752
+9	180	R			'Slim/DefaultServicesProvider'
+9	181	0	0.001492	368760	strrpos	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	378	2	'Slim\\DefaultServicesProvider'	'\\'
+9	181	1	0.001498	368760
+9	181	R			4
+9	182	0	0.001504	368760	substr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	379	3	'Slim\\DefaultServicesProvider'	0	4
+9	182	1	0.001510	368792
+9	182	R			'Slim'
+9	183	0	0.001517	368824	substr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	382	2	'Slim/DefaultServicesProvider.php'	5
+9	183	1	0.001522	368880
+9	183	R			'DefaultServicesProvider.php'
+9	184	0	0.001529	369008	file_exists	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	384	1	'/p3t/phpappfolder/includes/vendor/composer/../slim/slim/Slim/DefaultServicesProvider.php'
+9	184	1	0.001545	369008
+9	184	R			TRUE
+8	179	1	0.001552	368824
+8	179	R			'/p3t/phpappfolder/includes/vendor/composer/../slim/slim/Slim/DefaultServicesProvider.php'
+7	178	1	0.001561	368824
+7	178	R			'/p3t/phpappfolder/includes/vendor/composer/../slim/slim/Slim/DefaultServicesProvider.php'
+7	185	0	0.001571	368824	Composer\Autoload\includeFile	1		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	322	1	$file = '/p3t/phpappfolder/includes/vendor/composer/../slim/slim/Slim/DefaultServicesProvider.php'
+8	186	0	0.001583	369056	include	1	/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	444	0
+8	186	1	0.001589	369056
+7	185	1	0.001593	368824
+6	177	1	0.001596	368696
+6	177	R			TRUE
+5	176	1	0.001602	368640
+5	176	R			NULL
+5	187	0	0.001610	368680	Slim\DefaultServicesProvider->register	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/Container.php	87	1	$container = class Slim\Container { private $defaultSettings = array ('httpVersion' => '1.1', 'responseChunkSize' => 4096, 'outputBuffering' => 'append', 'determineRouteBeforeAppMiddleware' => FALSE, 'displayErrorDetails' => FALSE, 'addContentLengthHeader' => TRUE, 'routerCacheFile' => FALSE); private ${Pimple\Container}values = array ('settings' => class Closure { public $static = array (...); public $this = ... }); private ${Pimple\Container}factories = class SplObjectStorage { private $storage = array () }; private ${Pimple\Container}protected = class SplObjectStorage { private $storage = array () }; private ${Pimple\Container}frozen = array (); private ${Pimple\Container}raw = array (); private ${Pimple\Container}keys = array ('settings' => TRUE) }
+6	190	0	0.001635	368680	Slim\Container->offsetExists	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	34	1	$id = 'environment'
+6	190	1	0.001642	368680
+6	190	R			FALSE
+6	191	0	0.001650	369016	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	40	2	$id = 'environment'	$value = class Closure { public $this = class Slim\DefaultServicesProvider {  } }
+6	191	1	0.001661	369072
+6	191	R			NULL
+6	192	0	0.001667	369072	Slim\Container->offsetExists	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	45	1	$id = 'request'
+6	192	1	0.001681	369072
+6	192	R			FALSE
+6	193	0	0.001688	369432	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	53	2	$id = 'request'	$value = class Closure { public $this = class Slim\DefaultServicesProvider {  }; public $parameter = array ('$container' => '<required>') }
+6	193	1	0.001700	369432
+6	193	R			NULL
+6	194	0	0.001706	369432	Slim\Container->offsetExists	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	58	1	$id = 'response'
+6	194	1	0.001712	369432
+6	194	R			FALSE
+6	195	0	0.001718	369808	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	66	2	$id = 'response'	$value = class Closure { public $this = class Slim\DefaultServicesProvider {  }; public $parameter = array ('$container' => '<required>') }
+6	195	1	0.001728	369808
+6	195	R			NULL
+6	196	0	0.001783	369808	Slim\Container->offsetExists	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	74	1	$id = 'router'
+6	196	1	0.001792	369808
+6	196	R			FALSE
+6	197	0	0.001799	370224	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	82	2	$id = 'router'	$value = class Closure { public $this = class Slim\DefaultServicesProvider {  }; public $parameter = array ('$container' => '<required>') }
+6	197	1	0.001810	370224
+6	197	R			NULL
+6	198	0	0.001848	370224	Slim\Container->offsetExists	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	97	1	$id = 'foundHandler'
+6	198	1	0.001856	370224
+6	198	R			FALSE
+6	199	0	0.001863	370560	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	103	2	$id = 'foundHandler'	$value = class Closure { public $this = class Slim\DefaultServicesProvider {  } }
+6	199	1	0.001872	370560
+6	199	R			NULL
+6	200	0	0.001878	370560	Slim\Container->offsetExists	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	108	1	$id = 'phpErrorHandler'
+6	200	1	0.001884	370560
+6	200	R			FALSE
+6	201	0	0.001891	370912	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	122	2	$id = 'phpErrorHandler'	$value = class Closure { public $this = class Slim\DefaultServicesProvider {  }; public $parameter = array ('$container' => '<required>') }
+6	201	1	0.001900	370912
+6	201	R			NULL
+6	202	0	0.001906	370912	Slim\Container->offsetExists	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	127	1	$id = 'errorHandler'
+6	202	1	0.001912	370912
+6	202	R			FALSE
+6	203	0	0.001919	371264	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	141	2	$id = 'errorHandler'	$value = class Closure { public $this = class Slim\DefaultServicesProvider {  }; public $parameter = array ('$container' => '<required>') }
+6	203	1	0.001928	371264
+6	203	R			NULL
+6	204	0	0.001933	371264	Slim\Container->offsetExists	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	148	1	$id = 'notFoundHandler'
+6	204	1	0.001939	371264
+6	204	R			FALSE
+6	205	0	0.001945	371600	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	159	2	$id = 'notFoundHandler'	$value = class Closure { public $this = class Slim\DefaultServicesProvider {  } }
+6	205	1	0.001953	372240
+6	205	R			NULL
+6	206	0	0.001959	372240	Slim\Container->offsetExists	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	164	1	$id = 'notAllowedHandler'
+6	206	1	0.001965	372240
+6	206	R			FALSE
+6	207	0	0.001971	372576	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	176	2	$id = 'notAllowedHandler'	$value = class Closure { public $this = class Slim\DefaultServicesProvider {  } }
+6	207	1	0.001979	372576
+6	207	R			NULL
+6	208	0	0.001985	372576	Slim\Container->offsetExists	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	181	1	$id = 'callableResolver'
+6	208	1	0.001997	372576
+6	208	R			FALSE
+6	209	0	0.002003	372912	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/DefaultServicesProvider.php	189	2	$id = 'callableResolver'	$value = class Closure { public $this = class Slim\DefaultServicesProvider {  }; public $parameter = array ('$container' => '<required>') }
+6	209	1	0.002013	372912
+6	209	R			NULL
+5	187	1	0.002019	372912
+4	172	1	0.002023	372912
+3	169	1	0.002027	372912
+3	210	0	0.002034	373232	require	1	/p3t/phpappfolder/includes/coursework/app/dependencies.php	/p3t/phpappfolder/includes/coursework/bootstrap.php	14	0
+4	211	0	0.002042	373552	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/coursework/app/dependencies.php	4	2	$id = 'view'	$value = class Closure { public $parameter = array ('$container' => '<required>') }
+4	211	1	0.002052	373552
+4	211	R			NULL
+4	212	0	0.002058	373872	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/coursework/app/dependencies.php	23	2	$id = 'validator'	$value = class Closure { public $parameter = array ('$container' => '<required>') }
+4	212	1	0.002066	373872
+4	212	R			NULL
+4	213	0	0.002073	374192	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/coursework/app/dependencies.php	28	2	$id = 'companyDetailsModel'	$value = class Closure { public $parameter = array ('$container' => '<required>') }
+4	213	1	0.002081	374192
+4	213	R			NULL
+4	214	0	0.002087	374512	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/coursework/app/dependencies.php	33	2	$id = 'companyDetailsChartModel'	$value = class Closure { public $parameter = array ('$container' => '<required>') }
+4	214	1	0.002096	374512
+4	214	R			NULL
+4	215	0	0.002102	374832	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/coursework/app/dependencies.php	38	2	$id = 'databaseWrapper'	$value = class Closure { public $parameter = array ('$container' => '<required>') }
+4	215	1	0.002110	374832
+4	215	R			NULL
+4	216	0	0.002116	375152	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/coursework/app/dependencies.php	43	2	$id = 'sqlQueries'	$value = class Closure { public $parameter = array ('$container' => '<required>') }
+4	216	1	0.002125	376432
+4	216	R			NULL
+4	217	0	0.002131	376752	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/coursework/app/dependencies.php	48	2	$id = 'retrieveStockDataModel'	$value = class Closure { public $parameter = array ('$container' => '<required>') }
+4	217	1	0.002139	376752
+4	217	R			NULL
+4	218	0	0.002145	377072	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/coursework/app/dependencies.php	53	2	$id = 'processOutput'	$value = class Closure { public $parameter = array ('$container' => '<required>') }
+4	218	1	0.002153	377072
+4	218	R			NULL
+4	219	0	0.002159	377392	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/coursework/app/dependencies.php	58	2	$id = 'soapWrapper'	$value = class Closure { public $parameter = array ('$container' => '<required>') }
+4	219	1	0.002167	377392
+4	219	R			NULL
+4	220	0	0.002173	377712	Slim\Container->offsetSet	1		/p3t/phpappfolder/includes/coursework/app/dependencies.php	63	2	$id = 'xmlParser'	$value = class Closure { public $parameter = array ('$container' => '<required>') }
+4	220	1	0.002181	377712
+4	220	R			NULL
+3	210	1	0.002188	377712
+3	221	0	0.002192	377392	spl_autoload_call	0		/p3t/phpappfolder/includes/coursework/bootstrap.php	16	1	'Slim\\App'
+4	222	0	0.002199	377432	Composer\Autoload\ClassLoader->loadClass	1		/p3t/phpappfolder/includes/coursework/bootstrap.php	16	1	$class = 'Slim\\App'
+5	223	0	0.002205	377432	Composer\Autoload\ClassLoader->findFile	1		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	321	1	$class = 'Slim\\App'
+6	224	0	0.002215	377432	Composer\Autoload\ClassLoader->findFileWithExtension	1		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	351	2	$class = 'Slim\\App'	$ext = '.php'
+7	225	0	0.002228	377432	strtr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	373	3	'Slim\\App'	'\\'	'/'
+7	225	1	0.002235	377472
+7	225	R			'Slim/App'
+7	226	0	0.002245	377472	strrpos	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	378	2	'Slim\\App'	'\\'
+7	226	1	0.002251	377472
+7	226	R			4
+7	227	0	0.002257	377472	substr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	379	3	'Slim\\App'	0	4
+7	227	1	0.002262	377504
+7	227	R			'Slim'
+7	228	0	0.002269	377536	substr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	382	2	'Slim/App.php'	5
+7	228	1	0.002274	377568
+7	228	R			'App.php'
+7	229	0	0.002281	377672	file_exists	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	384	1	'/p3t/phpappfolder/includes/vendor/composer/../slim/slim/Slim/App.php'
+7	229	1	0.002294	377672
+7	229	R			TRUE
+6	224	1	0.002300	377528
+6	224	R			'/p3t/phpappfolder/includes/vendor/composer/../slim/slim/Slim/App.php'
+5	223	1	0.002309	377528
+5	223	R			'/p3t/phpappfolder/includes/vendor/composer/../slim/slim/Slim/App.php'
+5	230	0	0.002318	377528	Composer\Autoload\includeFile	1		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	322	1	$file = '/p3t/phpappfolder/includes/vendor/composer/../slim/slim/Slim/App.php'
+6	231	0	0.002328	379712	include	1	/p3t/phpappfolder/includes/vendor/slim/slim/Slim/App.php	/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	444	0
+7	232	0	0.002335	379720	spl_autoload_call	0		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/App.php	35	1	'Slim\\MiddlewareAwareTrait'
+8	233	0	0.002341	379776	Composer\Autoload\ClassLoader->loadClass	1		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/App.php	35	1	$class = 'Slim\\MiddlewareAwareTrait'
+9	234	0	0.002347	379776	Composer\Autoload\ClassLoader->findFile	1		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	321	1	$class = 'Slim\\MiddlewareAwareTrait'
+10	235	0	0.002356	379776	Composer\Autoload\ClassLoader->findFileWithExtension	1		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	351	2	$class = 'Slim\\MiddlewareAwareTrait'	$ext = '.php'
+11	236	0	0.002368	379776	strtr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	373	3	'Slim\\MiddlewareAwareTrait'	'\\'	'/'
+11	236	1	0.002374	379832
+11	236	R			'Slim/MiddlewareAwareTrait'
+11	237	0	0.002381	379832	strrpos	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	378	2	'Slim\\MiddlewareAwareTrait'	'\\'
+11	237	1	0.002386	379832
+11	237	R			4
+11	238	0	0.002392	379832	substr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	379	3	'Slim\\MiddlewareAwareTrait'	0	4
+11	238	1	0.002397	379864
+11	238	R			'Slim'
+11	239	0	0.002403	379896	substr	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	382	2	'Slim/MiddlewareAwareTrait.php'	5
+11	239	1	0.002408	379952
+11	239	R			'MiddlewareAwareTrait.php'
+11	240	0	0.002414	380064	file_exists	0		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	384	1	'/p3t/phpappfolder/includes/vendor/composer/../slim/slim/Slim/MiddlewareAwareTrait.php'
+11	240	1	0.002423	380064
+11	240	R			TRUE
+10	235	1	0.002429	379888
+10	235	R			'/p3t/phpappfolder/includes/vendor/composer/../slim/slim/Slim/MiddlewareAwareTrait.php'
+9	234	1	0.002438	379888
+9	234	R			'/p3t/phpappfolder/includes/vendor/composer/../slim/slim/Slim/MiddlewareAwareTrait.php'
+9	241	0	0.002447	379888	Composer\Autoload\includeFile	1		/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	322	1	$file = '/p3t/phpappfolder/includes/vendor/composer/../slim/slim/Slim/MiddlewareAwareTrait.php'
+10	242	0	0.002454	380120	include	1	/p3t/phpappfolder/includes/vendor/slim/slim/Slim/MiddlewareAwareTrait.php	/p3t/phpappfolder/includes/vendor/composer/ClassLoader.php	444	0
+10	242	1	0.002460	380120
+9	241	1	0.002463	379888
+8	233	1	0.002467	379776
+8	233	R			TRUE
+7	232	1	0.002473	379720
+7	232	R			NULL
+6	231	1	0.002483	379816
+5	230	1	0.002486	379584
+4	222	1	0.002489	379488
+4	222	R			TRUE
+3	221	1	0.002495	379448
+3	221	R			NULL
+3	243	0	0.002501	379544	Slim\App->__construct	1		/p3t/phpappfolder/includes/coursework/bootstrap.php	16	1	$container = class Slim\Container { private $defaultSettings = array ('httpVersion' => '1.1', 'responseChunkSize' => 4096, 'outputBuffering' => 'append', 'determineRouteBeforeAppMiddleware' => FALSE, 'displayErrorDetails' => FALSE, 'addContentLengthHeader' => TRUE, 'routerCacheFile' => FALSE); private ${Pimple\Container}values = array ('settings' => class Closure { public $static = array (...); public $this = ... }, 'environment' => class Closure { public $this = class Slim\DefaultServicesProvider { ... } }, 'request' => class Closure { public $this = class Slim\DefaultServicesProvider { ... }; public $parameter = array (...) }, 'response' => class Closure { public $this = class Slim\DefaultServicesProvider { ... }; public $parameter = array (...) }, 'router' => class Closure { public $this = class Slim\DefaultServicesProvider { ... }; public $parameter = array (...) }, 'foundHandler' => class Closure { public $this = class Slim\DefaultServicesProvider { ... } }, 'phpErrorHandler' => class Closure { public $this = class Slim\DefaultServicesProvider { ... }; public $parameter = array (...) }, 'errorHandler' => class Closure { public $this = class Slim\DefaultServicesProvider { ... }; public $parameter = array (...) }, 'notFoundHandler' => class Closure { public $this = class Slim\DefaultServicesProvider { ... } }, 'notAllowedHandler' => class Closure { public $this = class Slim\DefaultServicesProvider { ... } }, 'callableResolver' => class Closure { public $this = class Slim\DefaultServicesProvider { ... }; public $parameter = array (...) }, 'view' => class Closure { public $parameter = array (...) }, 'validator' => class Closure { public $parameter = array (...) }, 'companyDetailsModel' => class Closure { public $parameter = array (...) }, 'companyDetailsChartModel' => class Closure { public $parameter = array (...) }, 'databaseWrapper' => class Closure { public $parameter = array (...) }, 'sqlQueries' => class Closure { public $parameter = array (...) }, 'retrieveStockDataModel' => class Closure { public $parameter = array (...) }, 'processOutput' => class Closure { public $parameter = array (...) }, 'soapWrapper' => class Closure { public $parameter = array (...) }, 'xmlParser' => class Closure { public $parameter = array (...) }); private ${Pimple\Container}factories = class SplObjectStorage { private $storage = array () }; private ${Pimple\Container}protected = class SplObjectStorage { private $storage = array () }; private ${Pimple\Container}frozen = array (); private ${Pimple\Container}raw = array (); private ${Pimple\Container}keys = array ('settings' => TRUE, 'environment' => TRUE, 'request' => TRUE, 'response' => TRUE, 'router' => TRUE, 'foundHandler' => TRUE, 'phpErrorHandler' => TRUE, 'errorHandler' => TRUE, 'notFoundHandler' => TRUE, 'notAllowedHandler' => TRUE, 'callableResolver' => TRUE, 'view' => TRUE, 'validator' => TRUE, 'companyDetailsModel' => TRUE, 'companyDetailsChartModel' => TRUE, 'databaseWrapper' => TRUE, 'sqlQueries' => TRUE, 'retrieveStockDataModel' => TRUE, 'processOutput' => TRUE, 'soapWrapper' => TRUE, 'xmlParser' => TRUE) }
+4	246	0	0.002551	379544	is_array	0		/p3t/phpappfolder/includes/vendor/slim/slim/Slim/App.php	58	1	class Slim\Container { private $defaultSettings = array ('httpVersion' => '1.1', 'responseChunkSize' => 4096, 'outputBuffering' => 'append', 'determineRouteBeforeAppMiddleware' => FALSE, 'displayErrorDetails' => FALSE, 'addContentLengthHeader' => TRUE, 'routerCacheFile' => FALSE); private ${Pimple\Container}values = array ('settings' => class Closure { public $static = array (...); public $this = ... }, 'environment' => class Closure { public $this = class Slim\DefaultServicesProvider { ... } }, 'request' => class Closure { public $this = class Slim\DefaultServicesProvider { ... }; public $parameter = array (...) }, 'response' => class Closure { public $this = class Slim\DefaultServicesProvider { ... }; public $parameter = array (...) }, 'router' => class Closure { public $this = class Slim\DefaultServicesProvider { ... }; public $parameter = array (...) }, 'foundHandler' => class Closure { public $this = class Slim\DefaultServicesProvider { ... } }, 'phpErrorHandler' => class Closure { public $this = class Slim\DefaultServicesProvider { ... }; public $parameter = array (...) }, 'errorHandler' => class Closure { public $this = class Slim\DefaultServicesProvider { ... }; public $parameter = array (...) }, 'notFoundHandler' => class Closure { public $this = class Slim\DefaultServicesProvider { ... } }, 'notAllowedHandler' => class Closure { public $this = class Slim\DefaultServicesProvider { ... } }, 'callableResolver' => class Closure { public $this = class Slim\DefaultServicesProvider { ... }; public $parameter = array (...) }, 'view' => class Closure { public $parameter = array (...) }, 'validator' => class Closure { public $parameter = array (...) }, 'companyDetailsModel' => class Closure { public $parameter = array (...) }, 'companyDetailsChartModel' => class Closure { public $parameter = array (...) }, 'databaseWrapper' => class Closure { public $parameter = array (...) }, 'sqlQueries' => class Closure { public $parameter = array (...) }, 'retrieveStockDataModel' => class Closure { public $parameter = array (...) }, 'processOutput' => class Closure { public $parameter = array (...) }, 'soapWrapper' => class Closure { public $parameter = array (...) }, 'xmlParser' => class Closure { public $parameter = array (...) }); private ${Pimple\Container}factories = class SplObjectStorage { private $storage = array () }; private ${Pimple\Container}protected = class SplObjectStorage { private $storage = array () }; private ${Pimple\Container}frozen = array (); private ${Pimple\Container}raw = array (); private ${Pimple\Container}keys = array ('settings' => TRUE, 'environment' => TRUE, 'request' => TRUE, 'response' => TRUE, 'router' => TRUE, 'foundHandler' => TRUE, 'phpErrorHandler' => TRUE, 'errorHandler' => TRUE, 'notFoundHandler' => TRUE, 'notAllowedHandler' => TRUE, 'callableResolver' => TRUE, 'view' => TRUE, 'validator' => TRUE, 'companyDetailsModel' => TRUE, 'companyDetailsChartModel' => TRUE, 'databaseWrapper' => TRUE, 'sqlQueries' => TRUE, 'retrieveStockDataModel' => TRUE, 'processOutput' => TRUE, 'soapWrapper' => TRUE, 'xmlParser' => TRUE) }
+4	246	1	0.002592	379544
+4	246	R			FALSE
+3	243	1	0.002600	379544
+3	249	0	0.002605	379776	require	1	/p3t/phpappfolder/includes/coursework/app/routes.php	/p3t/phpappfolder/includes/coursework/bootstrap.php	18	0
+			0.002947	300200
+TRACE END   [2021-01-06 10:46:50]
+

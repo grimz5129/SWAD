@@ -1,0 +1,15 @@
+{
+
+  "autoload": {
+    "psr-4": {
+      "Coursework\\": "app/src/",
+      "Coursework\\Domain\\": "app/src/domain/"
+    }
+  },
+  "require": {
+    "doctrine/orm": "^2.8",
+    "slim/slim": "^3.0",
+    "slim/twig-view": "^2.5",
+    "monolog/monolog": "^2.2"
+  }
+}

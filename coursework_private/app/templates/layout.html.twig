@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Content-Language" content="en-gb" />
+    <link rel="stylesheet" href="{{ css_path }}" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="{{ landing_page }}">Coursework</a>
+    <a href="logout">Logout</a>
+</nav>
+
+{% block content %}{% endblock %}
+</body>
+

@@ -1,0 +1,52 @@
+{% extends 'layout.html.twig' %}
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block content %}
+    {% if local %}
+
+        {% for message in messages %}
+
+            <div class="col-md-6 offset-3 card" style="margin-bottom: 10px; margin-top: 5px">
+                <div class="card-body">
+                    <ul>
+                        <li> Source: {{ message['srcMSISDN']|e }}</li>
+                        <li> Dest: {{ message['destMSISDN'] }}</li>
+                        <li> Date: {{ message['receivedDate'] }}</li>
+                        <li> Switches {{ message['switch1'] }}, {{ message['switch2'] }}, {{ message['switch3'] }}, {{ message['switch4'] }}</li>
+                        <li> Fan: {{ (message['fan'] == 0) ? "off" : "on" }} and {{ (message['forward'] == 0) ? 'reverse' : 'forward'}}</li>
+                        <li> Temperature: {{ message['temperature']}} </li>
+                        <li> Keypad: {{ message['keypad'] }}</li>
+                    </ul>
+                </div>
+            </div>
+        {% endfor %}
+        <div class="container-fluid col-md-6 offset-3">
+        <button class="disabled btn btn-success">You are already on local</button>
+        </div>
+    {% else %}
+
+        {% for message in messages %}
+
+            <div class="col-md-6 offset-3 card" style="margin-bottom: 10px; margin-top: 5px">
+                <div class="card-body">
+                    <ul>
+                        <li> Source: {{ message.sourcemsisdn|e }}</li>
+                        <li> Dest: {{ message.destinationmsisdn|e }}</li>
+                        <li> Date: {{ message.receivedtime|e }}</li>
+                        <li> Switches {{ message.message.s|e }}, {{ message.message.s2|e }}, {{ message.message.s3|e }}, {{ message.message.s4|e }}</li>
+                        <li> Fan: {{ (message.message.f == 0) ? "off" : "on" }} and {{ (message.message.fw == 0) ? 'reverse' : 'forward'}}</li>
+                        <li> Temperature: {{ message.message.h|e }} </li>
+                        <li> Keypad: {{ message.message.kp|e }}</li>
+                    </ul>
+                </div>
+            </div>
+        {% endfor %}
+        <div class="container-fluid col-md-6 offset-3">
+        <form action="saveMessages" method="get">
+            <button class="btn btn-success" type="submit">
+                Download all to database!
+            </button>
+        </form>
+        </div>
+    {% endif %}
+{% endblock %}

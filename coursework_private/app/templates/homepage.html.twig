@@ -1,0 +1,44 @@
+{% extends 'layout.html.twig' %}
+{% block title %}{{page_title}}{% endblock %}
+{% block content %}
+    <link rel="stylesheet" href="{{ css_path }}" type="text/css"/>
+    <div class="row">
+    <div class="col-md-6 container-fixed">
+        <h2>&nbsp&nbspLogin</h2>
+        <form action="login" method="post" class="col-md-6">
+            <label for="username"><b>Username:</b></label>
+            <input class="form-control" type="username" name="username" required>
+
+            <label for="password"><b>Password</b></label>
+            <input class="form-control" type="password" name="password" required>
+            <hr class="mb-3">
+            <input class="btn btn-primary" type="submit" name="Login" value="Login">
+            <p>{{ error2 }}</p>
+        </form>
+    </div>
+
+        <div class="col-md-6 container-fixed">
+    <h2>&nbspOr Register</h2>
+
+    <form action="register" method="post" class="col-md-6">
+        <p>Fill up the form with correct values.</p>
+        <hr class="mb-3">
+        <label for="username"><b>Username</b></label>
+        <input class="form-control" type="username" name="username" required>
+
+        <label for="email"><b>Email</b></label>
+        <input class="form-control" type="email" name="email" required>
+
+        <label for="password"><b>Password</b></label>
+        <input class="form-control" type="password" name="password" required>
+
+        <label for="password-verify"><b>Confirm Password</b></label>
+        <input class="form-control" type="password" name="password-verify" required>
+        <hr class="mb-3">
+        <input class="btn btn-primary" type="submit" name="Submit" value="Submit">
+
+        <p>{{ error }}</p>
+    </form>
+        </div>
+    </div>
+{% endblock %}
